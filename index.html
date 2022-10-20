@@ -16,37 +16,132 @@
     <title>Notifications page</title>
   </head>
   <body>
-    <main>
-      <header>
-        <h1>Notifications <span class="unread-count">3</span></h1>
-        <h2>Mark all as read</h2>
-      </header>
-      <div>
-        Mark Webber reacted to your recent post My first tournament today! 1m
-        ago
-      </div>
-      <div>Angela Gray followed you 5m ago</div>
-      <div>Jacob Thompson has joined your group Chess Club 1 day ago</div>
-      <div>
-        Rizky Hasanuddin sent you a private message 5 days ago Hello, thanks for
-        setting up the Chess Club. I've been a member for a few weeks now and
-        I'm already having lots of fun and improving my game.
-      </div>
-      <div>Kimberly Smith commented on your picture 1 week ago</div>
-      <div>
-        Nathan Peterson reacted to your recent post 5 end-game strategies to
-        increase your win rate 2 weeks ago
-      </div>
-      <div>Anna Kim left the group Chess Club 2 weeks ago</div>
-    </main>
-    <footer>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
-    </footer>
+    <div class="wrapper">
+      <section>
+        <main>
+          <header>
+            <h1>Notifications <span class="unread-count">3</span></h1>
+            <h2>Mark all as read</h2>
+          </header>
+
+          <div class="unread-container">
+            <img
+              src="/assets/images/avatar-mark-webber.webp"
+              alt="Mark Webber Avatar"
+            />
+            <div class="text-container">
+              <div class="info">
+                <span class="name">Mark Webber&nbsp</span> reacted to your
+                recent post <span class="post">My first tournament today!</span>
+              </div>
+              <div class="time-ago">1m ago</div>
+            </div>
+          </div>
+
+          <div class="unread-container">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="Angela Gray avatar"
+              srcset=""
+            />
+            <div class="text-container">
+              <span class="info"
+                ><span class="name">Angela Gray&nbsp</span> followed you</span
+              >
+              <div class="time-ago">5m ago</div>
+            </div>
+          </div>
+
+          <div class="unread-container">
+            <img
+              src="/assets/images/avatar-jacob-thompson.webp"
+              alt="Jacob Thompson avatar"
+            />
+            <div class="text-container">
+              <span class="info">
+                <span class="name">Jacob Thompson&nbsp</span> has joined your
+                group <span class="post">Chess Club</span></span
+              >
+              <div class="time-ago">1 day ago</div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizky Hasanuddin avatar"
+            />
+            <div class="text-container">
+              <span class="info">
+                <span class="name">Rizky Hasanuddin&nbsp</span> sent you a
+                private message</span
+              >
+              <div class="time-ago">5 days ago</div>
+            </div>
+          </div>
+          <div class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+
+          <div class="container">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="Kimberly Smith avatar"
+            />
+            <div class="text-container">
+              <span class="info">
+                <span class="name">Kimberly Smith&nbsp</span> commented on your
+                picture</span
+              >
+              <div class="time-ago">1 week ago</div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson avatar"
+            />
+            <div class="text-container">
+              <span class="info">
+                <span class="name">Nathan Peterson&nbsp</span> reacted to your
+                recent post
+                <span class="post"
+                  >5 end-game strategies to increase your win rate</span
+                ></span
+              >
+              <div class="time-ago">2 weeks ago</div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="Anna Kim avatar"
+            />
+            <div class="text-container">
+              <span class="info">
+                <span class="name">Anna Kim&nbsp</span> left the group
+                <span class="post">Chess Club</span></span
+              >
+              <div class="time-ago">2 weeks ago</div>
+            </div>
+          </div>
+        </main>
+      </section>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer>
+    </div>
     <script src="notifications.js"></script>
   </body>
 </html>

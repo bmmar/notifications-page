@@ -1,27 +1,137 @@
+* {
+  font-size: 14px;
+}
 body {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  text-align: center;
+  text-align: left;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: rgb(234, 234, 234);
 }
 
+.wrapper {
+  width: 350px;
+  height: 750px;
+  background-color: white;
+  border-radius: 1em;
+  margin: 20px 20px 0 0;
+  padding: 2rem;
+}
 header {
-  display: inline;
+  /* display: inline-block; */
+  /* border: 2px solid black; */
+  padding: 0 0 0.5rem 0.2rem;
 }
 
 h1 {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: left;
   font-weight: 800;
   display: inline;
+  font-size: 1.25rem;
+  /* border: 2px solid red; */
+  padding: 0 3em 0 0;
+}
+
+.unread-count {
+  background-color: blue;
+  color: white;
+  margin-left: 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
 }
 
 h2 {
-  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
-  display: inline;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-align: right;
+  cursor: pointer;
+  margin: 0 0 0 22rem;
 }
+
+.container {
+  background-color: white;
+  margin: 10px;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.unread-container {  
+  background-color: aliceblue;
+  margin:10px;
+  padding: 0.5rem;
+  border-radius: 0.8rem; 
+  display: flex;
+  align-items: center;
+}
+
+
+img {
+  display: inline;
+  max-width: 40px;
+  max-height: 40px;
+  padding: 0 10px;
+}
+
+.info {
+   padding:0;
+}
+
+.name {
+  color:black;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.time-ago {
+  font-weight: 400;
+  color: hsl(240, 1%, 77%);
+}
+
+.post {
+  font-weight: 600;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.message {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 0 10px 0 80px;
+  cursor: pointer;
+}
+
+button {
+  background-color: red;
+  border: none;
+  padding: 4px;
+  text-decoration: none;
+  /* display: inline; */
+  /* font-size: 3px; */
+  margin-left:8px;
+  border-radius: 50%;
+  vertical-align: 3px;
+}
+
+.blue {
+  color:blue;
+}
+
+.black {
+  color: black;
+}
+
+@media (min-width: 650px) {
+  .wrapper {width: 600px;
+            height: 620px};
+}
+
 
 .attribution {
   font-size: 11px;
