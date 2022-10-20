@@ -25,6 +25,7 @@ for (let i = 0; i < userNames.length; i++) {
     unreadAll[i].classList.add("container");
     buttons[i].style.display = "none";
     count--;
+    if (count < 0) {count = 0};
     unreadCount.textContent = count;
   });
 }
